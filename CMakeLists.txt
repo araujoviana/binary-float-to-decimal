@@ -14,13 +14,14 @@ if (DOXYGEN_FOUND)
     add_custom_target(doc
         COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYFILE_OUT}
         WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
-        COMMENT "Generating documentation with Doxygen..."
         VERBATIM)
-
-    message(STATUS "Done!")
 else()
     message(STATUS "Doxygen not found!")
 endif()
+
+set(CMAKE_BUILD_TYPE Release)
+set(CMAKE_C_FLAGS_RELEASE "-O3 -DNDEBUG -flto")
+set(CMAKE_EXE_LINKER_FLAGS_RELEASE "-flto")
 
 add_executable(BinaryFloatToDecimal src/main.c)
 target_link_libraries(BinaryFloatToDecimal m)
