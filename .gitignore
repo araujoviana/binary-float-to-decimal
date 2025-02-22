@@ -1,0 +1,47 @@
+# Ignorar arquivos de build gerados pelo CMake
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+Makefile
+*.cbp
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Ignorar arquivos de objeto e executáveis
+*.o
+*.obj
+*.exe
+*.dll
+*.lib
+*.so
+*.dylib
+*.a
+
+# Ignorar arquivos de depuração
+*.pdb
+*.idb
+
+# Ignorar arquivos de teste
+*.gcda
+*.gcno
+*.gcov
+
+# Ignorar arquivos de configuração do editor
+.vscode/
+.idea/
+*.swp
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de documentação gerados
+docs/html/
+docs/latex/
+
+# Ignorar arquivos de configuração específicos do usuário
+.DS_Store
+Thumbs.db
+
