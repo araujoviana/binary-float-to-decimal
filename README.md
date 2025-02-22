@@ -17,8 +17,6 @@ Ensure you have the following tools installed:
 
 ### Installing
 
-Follow these steps to get the BinaryFloatToDecimal program up and running:
-
 1.  **Clone the repository** to your local machine using Git:
 
     ```bash
