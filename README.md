@@ -40,10 +40,11 @@ Ensure you have the following tools installed:
 4.  **Compile the program**:
 
     ```bash
-    make
+    make # for generating a executable
+    make doc # for generating the Doxygen documentation
     ```
 
-After these steps, the executable `BinaryFloatToDecimal` will be created in the `build` directory.
+After these steps, the executable `BinaryFloatToDecimal` will be created in the `build` directory, and the Doxygen documentation will be created in the `build/doc/doxygen/html/index.html` file.
 
 ### Running the Program
 
