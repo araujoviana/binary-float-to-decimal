@@ -129,7 +129,7 @@ double convert_ieee_float(char **full_float);
  * @return int Returns 0 if the program executes successfully.
  */
 int main(int argc, char *argv[]) {
-  printf("Digite o float: ");
+  printf("Insert the binary float: ");
 
   char user_binary_float[33];
   scanf("%s", user_binary_float);
